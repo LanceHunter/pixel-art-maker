@@ -5,7 +5,7 @@
 
   let theColor = '';
 
-  for (i=0; i<1600; i++) {
+  for (i=0; i<2000; i++) {
     let pixel = document.createElement('div');
     pixel.classList.add('pixel');
     pixel.id = `pixel${i}`;
