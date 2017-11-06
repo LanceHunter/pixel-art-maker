@@ -1,6 +1,8 @@
 (function () {
   let board = document.getElementById('board');
   let pallete = document.getElementById('pallete');
+  let current = document.getElementById('current');
+
   let theColor = '';
 
   for (i=0; i<1600; i++) {
@@ -18,6 +20,7 @@
     let newColor = event.target.id;
     if (event.target.id !== 'pallete') {
       theColor = event.target.id;
+      current.style.backgroundColor = theColor;
     }
   }
 
