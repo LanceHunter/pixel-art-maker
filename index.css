@@ -1,0 +1,11 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  background-color: silver;
+  margins: auto;
+  width: 70%;
+  height: 500px;
+  border-radius: 15px;
+}
