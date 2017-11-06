@@ -3,11 +3,11 @@
   let pallete = document.getElementById('pallete');
   let theColor = '';
 
-  for (i=0; i<4; i++) {
+  for (i=0; i<1600; i++) {
     let pixel = document.createElement('div');
     pixel.classList.add('pixel');
     pixel.id = `pixel${i}`;
-    pixel.innerText = `Pixel: ${i}`;
+//    pixel.innerText = `Pixel: ${i}`;
     board.appendChild(pixel);
   }
 
@@ -24,7 +24,11 @@
   function changeColor() {
     let square = document.getElementById(event.target.id);
     if (theColor) {
-      square.setAttribute("style", `background-color: ${theColor};`);
+      square.style.backgroundColor = theColor;
+      square.style.borderColor = theColor;
+    }
+    if (theColor === 'white') {
+      square.style.borderColor = 'silver';
     }
   }
 
