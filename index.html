@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pixel Art Maker</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <!-- Main container is here -->
-    <div class="container">
-      <!-- Here is the board where items are painted -->
-      <div class="board" id="board">
-      </div>
-      <!-- Below the board but in the container we have the color pallette-->
-      <div class="palette" id="palette">
-        <div class="circle colorWhite" id="white"></div>
-        <div class="circle colorYellow" id="yellow"></div>
-        <div class="circle colorOrange" id="orange"></div>
-        <div class="circle colorRed" id="red"></div>
-        <div class="circle colorMagenta" id="magenta"></div>
-        <div class="circle colorPurple" id="purple"></div>
-        <div class="circle colorBlue" id="blue"></div>
-        <div class="circle colorCyan" id="cyan"></div>
-        <div class="circle colorGreen" id="green"></div>
-        <div class="circle colorDarkGreen" id="darkgreen"></div>
-        <div class="circle colorBrown" id="brown"></div>
-        <div class="circle colorTan" id="tan"></div>
-        <div class="circle colorBeige" id="beige"></div>
-        <div class="circle colorGrey" id="grey"></div>
-        <div class="circle colorDarkGrey" id="darkgrey"></div>
-        <div class="circle colorBlack" id="black"></div>
 
+<head>
+  <meta charset="utf-8">
+  <title>Pixel Art Maker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
 
-      </div>
-      <div class="current" id="current"></div>
+<body>
+  <!-- Main container is here -->
+  <div class="container">
+    <!-- Here is the board where items are painted -->
+    <div class="board" id="board">
     </div>
-  </body>
-  <script defer src="index.js"></script>
+    <!-- Below the board but in the container we have the color palette-->
+    <div class="palette" id="palette">
+      <div class="circle colorWhite" id="white"></div>
+      <div class="circle colorYellow" id="yellow"></div>
+      <div class="circle colorOrange" id="orange"></div>
+      <div class="circle colorRed" id="red"></div>
+      <div class="circle colorMagenta" id="magenta"></div>
+      <div class="circle colorPurple" id="purple"></div>
+      <div class="circle colorBlue" id="blue"></div>
+      <div class="circle colorCyan" id="cyan"></div>
+      <div class="circle colorGreen" id="green"></div>
+      <div class="circle colorDarkGreen" id="darkgreen"></div>
+      <div class="circle colorBrown" id="brown"></div>
+      <div class="circle colorTan" id="tan"></div>
+      <div class="circle colorBeige" id="beige"></div>
+      <div class="circle colorGrey" id="grey"></div>
+      <div class="circle colorDarkGrey" id="darkgrey"></div>
+      <div class="circle colorBlack" id="black"></div>
+    </div>
+    <!-- Next to the pallete we show the currently-selected color. -->
+    <div class="current" id="current"></div>
+  </div>
+</body>
+<script defer src="index.js"></script>
 
 </html>
