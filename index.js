@@ -22,19 +22,24 @@
     board.addEventListener('mouseover', startBrush);
   }
 
-  function startBrush() {
+  function startBrush(event) {
     board.addEventListener('mouseup', endBrush);
     let square = document.getElementById(event.target.id);
-    if (theColor) {
+//    console.log("1 " + square.id);
+    if (theColor && (square !== board)) {
       square.style.backgroundColor = theColor;
       square.style.borderColor = theColor;
     }
     if (theColor === 'white') {
       square.style.borderColor = 'silver';
     }
+    board.style.backgroundColor = 'silver';
   }
 
   function endBrush() {
+    board.style.backgroundColor = 'silver';
+    board.style.borderColor = 'silver';
+    console.log('This is over.');
     board.removeEventListener('mouseover', startBrush);
   }
 
